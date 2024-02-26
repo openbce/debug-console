@@ -1,2 +1,3 @@
-# debug_pod
-The pod including debug tools
+# Debug Console
+
+The pod including debug tools, e.g. nettool
