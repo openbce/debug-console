@@ -9,3 +9,12 @@ spec:
     image: openbce/debug-console
     securityContext:
       privileged: true
+    volumeMounts:
+    - mountPath: /run/dbus
+      name: dbus
+      readOnly: true
+  volumes:
+  - name: dbus
+    hostPath:
+      path: /run/dbus/
+      type: Directory
