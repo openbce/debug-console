@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-console
+spec:
+  hostnetwork: true
+  containers:
+  - name: debug-console
+    image: openbce-console
+    command:
+      - /bin/bash
+      - -c
+      - "exec tail -f /dev/null"
