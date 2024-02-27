@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: debug-console
 spec:
-  hostnetwork: true
+  hostNetwork: true
   containers:
   - name: debug-console
     image: openbce-console
