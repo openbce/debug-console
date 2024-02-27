@@ -3,8 +3,9 @@ kind: Pod
 metadata:
   name: debug-console
 spec:
-  privileged: true
   hostNetwork: true
   containers:
   - name: debug-console
-    image: openbce-console
+    image: openbce/debug-console
+    securityContext:
+      privileged: true
