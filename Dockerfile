@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && apt-get -y install \
-    tcpdump iproute2 net-tools \
+    tcpdump iproute2 net-tools bridge-utils \
     build-essential protobuf-compiler libudev-dev pkg-config libclang-dev libibverbs-dev libpci-dev \
     libcairo2-dev libgirepository1.0-dev python3 python3-pip python3-gi network-manager-dev \
     git vim curl pciutils apt-transport-https ca-certificates
