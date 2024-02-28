@@ -1,7 +1,7 @@
 IMG_TAG=openbce/debug-console
 
-build-docker:
+build:
 	docker build -t ${IMG_TAG} .
 
-publish-docker:
+publish:
 	docker push ${IMG_TAG}
