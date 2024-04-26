@@ -18,8 +18,8 @@ RUN apt-get update && apt-get install -y kubectl
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y -q
 
 # Install tools
-RUN $HOME/.cargo/bin/cargo install --git https://github.com/openbce/ufmclient
-RUN $HOME/.cargo/bin/cargo install --git https://github.com/openbce/myhca
+RUN $HOME/.cargo/bin/cargo install --git https://github.com/openbce/ib-rs ufmcli
+RUN $HOME/.cargo/bin/cargo install --git https://github.com/openbce/ib-rs lshca
 RUN $HOME/.cargo/bin/cargo install nmstatectl
 
 ENTRYPOINT ["sh", "-c", "exec tail -f /dev/null"]
