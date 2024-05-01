@@ -1,9 +1,9 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && apt-get -y install \
-    tcpdump iproute2 net-tools bridge-utils \
+    tcpdump iproute2 net-tools bridge-utils ipmitool \
     build-essential protobuf-compiler libudev-dev pkg-config libclang-dev libibverbs-dev libpci-dev \
-    libcairo2-dev libgirepository1.0-dev python3 python3-pip python3-gi network-manager-dev \
+    libcairo2-dev libgirepository1.0-dev python3 python3-pip python3-gi network-manager-dev libibumad-dev libibmad-dev\
     git vim curl pciutils apt-transport-https ca-certificates
 
 # Install keyring of k8s
