@@ -1,6 +1,6 @@
 # Debug Console
 
-The pod including debug tools, e.g. tcpdump, lshca, ufmcli
+The pod including debug tools, e.g. tcpdump, hcactl, ufmctl
 
 ## Install
 
